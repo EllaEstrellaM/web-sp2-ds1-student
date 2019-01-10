@@ -37,4 +37,23 @@
     // ************************************************************************************
 
 
+
+    // ************************************************************************************
+    // **************   Modul sluzby        ***********************************************
+
+    // novy modul
+    $module = array();
+    $module["name"] = "sluzby";
+    $module["title"] = "Služby";
+    $module["route_name"] = "sluzby";
+    $module["route_path"] = "/plugin/$module[name]";
+    $module["route"] = array("controller_name" => "sluzby_controller", "controller_action" => "indexAction");
+
+    // pridat modul
+    $modules_admin[] = $module;
+
+    // **************   KONEC Modul sluzby         ****************************************
+    // ************************************************************************************
+
+
     return $modules_admin;
